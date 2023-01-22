@@ -36,7 +36,6 @@ public class Client {
     /**
      * @return
      */
-   // public document[] afficherDocuments() {
     public int getnumClient() {
 		return numClient ;
 	}
