@@ -1,4 +1,4 @@
 Name: Projet GL
 Specification-Titel: Application de gestion de location de voitures
-Specification-Version: 0.0.0
+Specification-Version: 1.0.0
 Specification-Vendor: ALINFO1 Groupe Ghayth.
