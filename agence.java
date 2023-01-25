@@ -69,7 +69,7 @@ public class Agence {
 		for  ( Voiture v : voiture ) {
 			if  ( v.isLouee()) {
 			System.out.println( "la voiture: " + v.getMatricule()+" " + v.getType()+ " " + v.getMarque()+ " "+ v.getCarteGrise());
-			}
+      }
 			
 			}
 	}
