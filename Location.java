@@ -83,7 +83,17 @@ public class Location {
 		return dateDebut;
 	}
 
-	
+public static float calculMontant(Location location) {
+    	
+    	String a= location.getDateDebut();
+    	String b= location.getDateFin();
+    	float c;
+    	float d;
+    	d=location.getPrixDeLocation();
+    	c= getDayCount(a, b);
+    	
+    	return c*d;
+    	}	
 
 
 	public String getMatricule() {
