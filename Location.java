@@ -83,6 +83,18 @@ public class Location {
 		return dateDebut;
 	}
 
+public static float calculMontant(Location location) {
+    	
+    	String a= location.getDateDebut();
+    	String b= location.getDateFin();
+    	float c;
+    	float d;
+    	d=location.getPrixDeLocation();
+    	c= getDayCount(a, b);
+    	
+    	return c*d;
+    	}	
+
 	 private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
 
     public static  float getDayCount(String debut, String fin) {
@@ -98,6 +110,7 @@ public class Location {
       }
       return diff;
     }
+
 
 
 	public String getMatricule() {
