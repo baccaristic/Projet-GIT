@@ -68,13 +68,13 @@ public class Agence {
 		// on utilise boucle for afin d'afficher le vecteur des voitures
 		for  ( Voiture v : voiture ) {
 			if  ( v.isLouee()) {
-			System.out.println("La voiture" + v.getMatricule()+" " + v.getType()+ " " + v.getMarque()+ " "+ v.getCarteGrise());
-			}
+			System.out.println( "la voiture: " + v.getMatricule()+" " + v.getType()+ " " + v.getMarque()+ " "+ v.getCarteGrise());
+      }
 			
 			}
 	}
 	
-	public void afficherVoituresLouees() {
+	public void afficherVoitures() {
 		// on utilise boucle for afin d'afficher le vecteur des voitures
 		for  ( Voiture v : voiture ) {
 			System.out.println( v.getMatricule()+" " + v.getType()+ " " + v.getMarque()+ " "+ v.getCarteGrise());
