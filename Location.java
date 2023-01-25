@@ -83,7 +83,21 @@ public class Location {
 		return dateDebut;
 	}
 
-	
+	 private static SimpleDateFormat simpleDateFormat = new SimpleDateFormat("dd.MM.yyyy");
+
+    public static  float getDayCount(String debut, String fin) {
+      long diff = -1;
+      try {
+        Date dateDebut = simpleDateFormat.parse(debut);
+        Date dateFin = simpleDateFormat.parse(fin);
+
+       
+        diff = Math.round((dateFin .getTime() - dateDebut.getTime()) / (double) 86400000);
+      } catch (Exception e) {
+        
+      }
+      return diff;
+    }
 
 
 	public String getMatricule() {
