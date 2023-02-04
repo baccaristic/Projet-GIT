@@ -66,4 +66,10 @@ public class Client {
 	public void setType(String type) {
 		this.type = type;
 	}
+	public static void afficherDocClient( int numClient) {
+	   Vector <Document> documents =new Vector <>();
+	    for (Document d : documents) {
+	    	System.out.println( "Les documents du clients numéro " + "  " + d.getNumeroC() +" sont"+ " "+ d.getType() );
+	    }
+   }
 }
